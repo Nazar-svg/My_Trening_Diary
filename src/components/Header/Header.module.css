@@ -1,0 +1,30 @@
+.Header {
+    background-color: #92000A;
+    width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #505369;
+  }
+  .headerInner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 0;
+    
+  }
+  .Container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .Logo{
+      display: inline-block;
+  }
+  .labelLogo{
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+  }
