@@ -8,26 +8,4 @@
 
 
 
-.nav{
-  display: flex;
-   font-size: 13px;
-   font-weight: 700;
-   text-transform: uppercase;
-}
-.nav__link {
-  color: #ffffff;
-  text-decoration: none;
-  opacity: 0.75;
-  margin-left: 50px;
-  transition: opacity 1s linear;
-}
-.nav__link:first-child {
-  margin-left: 0;
-
-}
-.nav__link:hover {
-   text-decoration: underline;
-   opacity: 1;
-}
-
 

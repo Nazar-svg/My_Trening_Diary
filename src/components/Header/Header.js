@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './Header.module.css'
 import logo from '../../imagen/triathlon.svg'
-
+import Navigation from '../Navigation/Navigation'
 
 const Header = props => {
     return (
@@ -12,18 +12,7 @@ const Header = props => {
                         <img src={logo} alt="logo" />
                         <div className={classes.labelLogo}>Trening <br />Diary</div>
                     </div>
-
-                    <nav className={classes.headerNav}>
-                        <a className={classes.navLink}>cycling training</a>
-                        <a className={classes.navLink}>travel</a>
-                        <a className={classes.navLink}>POWER TRAINING</a>
-                        <a className={classes.navLink}>RUN training</a>
-                        <a className={classes.navLink}>Photo</a>
-                    </nav>
-
-                    {/* <button className="burger" type="button">
-                <span className="burger__item">menu</span>
-            </button> */}
+                 <Navigation />
                 </div>
             </div>
         </header>
