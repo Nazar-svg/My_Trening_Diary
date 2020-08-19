@@ -4,7 +4,10 @@ import { NavLink } from 'react-router-dom'
 
 const links = [
     { to: '/cycling', label: 'Вело Треніровки', exact: false },
-    { to: '/travel', label: 'Подорожі', exact: false }
+    { to: '/travel', label: 'Подорожі', exact: false },
+    { to: '/comprehensiveTraining', label: 'Комплексні треніровки', exact: false },
+    { to: '/run', label: 'Біг', exact: false },
+    { to: '/photo', label: 'Фото', exact: false }
 ]
 
 class Navigation extends Component {
@@ -18,7 +21,7 @@ class Navigation extends Component {
                     key={index}
                     exact={link.exact}
                     activeClassName={classes.active}
-                    >
+                >
                     {link.label}
                 </NavLink>
             )
