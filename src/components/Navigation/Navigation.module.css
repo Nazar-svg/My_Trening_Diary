@@ -1,12 +1,15 @@
 
 .headerNav{
     display: flex;
-     font-size: 13px;
+     font-size: 25px;
      font-weight: 700;
      text-transform: uppercase;
   }
+  .headerNav li {
+    list-style: none;
+  }
   .navLink {
-    color: #ffffff;
+    color: black;
     text-decoration: none;
     opacity: 0.75;
     margin-left: 50px;
