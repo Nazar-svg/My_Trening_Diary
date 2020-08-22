@@ -1,11 +1,17 @@
 import React, { Component } from 'react'
 import classes from './Cycling.module.css'
+import MenuCycling from '../../components/Menu/MenuCycling/MenuCycling'
+import Table from '../../components/Table/Table'
 
 class Cycling extends Component {
     render() {
         return (
-            <div>
-               <h1 className={classes.Cycling}>CICLING</h1> 
+            <div className={classes.Cycling}>
+                <MenuCycling />
+                <div className={classes.table}>
+                    <Table />
+                </div>
+
             </div>
         )
     }

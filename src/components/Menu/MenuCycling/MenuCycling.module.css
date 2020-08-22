@@ -1,0 +1,25 @@
+.MenuCycling{
+    display: flex;
+    padding: 153px 0 0 0;
+    width: 300px;
+    height:auto;
+    min-height: 600px;
+    background-color: #92000A;
+}
+.menuList{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    width: 280px;
+  }
+  .menuList ul li {
+    text-align: center;
+    list-style: none;
+  }
+  .menuList ul li {
+    margin-top: 20px;
+  }
+  h2 {
+      text-transform: uppercase;
+      text-align: center;
+  }

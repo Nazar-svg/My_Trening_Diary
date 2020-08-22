@@ -5,7 +5,6 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  border-bottom: 1px solid #505369;
   }
   .headerInner{
     display: flex;
