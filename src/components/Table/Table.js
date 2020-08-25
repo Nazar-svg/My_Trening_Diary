@@ -3,6 +3,11 @@ import './Table.module.css'
 
 class Table extends Component {
     state = {
+        dataHeader: "ДАТА",
+        locationHeader: "ЛОКАЦІЯ",
+        timeHeader: "ЧАС",
+        distanseHeader: "ДИСТАНЦІЯ",
+
         tableItems: [
             { data: "15.09.2020", location: 'калуш-журавно', time: '1год 30хв', distanse: '40km' },
             { data: "15.09.2020", location: 'калуш-журавно', time: '1год 30хв', distanse: '40km' },
@@ -32,10 +37,10 @@ class Table extends Component {
             <table>
                 <thead>
                     <tr>
-                        <td>дата</td>
-                        <td>локація</td>
-                        <td>ЧАС</td>
-                        <td>ВІДСТАНЬ</td>
+                        <td>{this.state.dataHeader}</td>
+                        <td>{this.state.locationHeader}</td>
+                        <td>{this.state.timeHeader}</td>
+                        <td>{this.state.distanseHeader}</td>
                     </tr>
                 </thead>
                 <tbody>
