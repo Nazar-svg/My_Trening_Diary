@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Table.module.css'
+import MenuCycling from '../Menu/MenuCycling/MenuCycling'
 
 class Table extends Component {
     state = {
@@ -7,16 +8,18 @@ class Table extends Component {
         locationHeader: "ЛОКАЦІЯ",
         timeHeader: "ЧАС",
         distanseHeader: "ДИСТАНЦІЯ",
-
         tableItems: [
-            { data: "15.09.2020", location: 'калуш-журавно', time: '1год 30хв', distanse: '40km' },
-            { data: "15.09.2020", location: 'калуш-журавно', time: '1год 30хв', distanse: '40km' },
-            { data: "15.09.2020", location: 'калуш-журавно', time: '1год 30хв', distanse: '40km' },
-            { data: "15.09.2020", location: 'калуш-журавно', time: '1год 30хв', distanse: '40km' }
-
+            { data: "24.09.2020", location: 'калуш-журавно', time: '1год 30хв 15сек', distanse: '40km' },
         ]
     }
 
+    addNewDataTable = (item) => {
+        console.log(item)
+     this.setState({
+       ...this.state, 
+       tableItems: [...this.state.tableItems, item]
+     })
+    }
     renderTableItem() {
         return this.state.tableItems.map((item, index) => {
             return (
@@ -28,12 +31,13 @@ class Table extends Component {
                 </tr>
             )
         })
-
-
     }
-
     render() {
         return (
+            <> 
+             <MenuCycling 
+              addNewDataTable={this.addNewDataTable}
+             />
             <table>
                 <thead>
                     <tr>
@@ -47,6 +51,7 @@ class Table extends Component {
                     {this.renderTableItem()}
                 </tbody>
             </table>
+            </>
         )
     }
 }
