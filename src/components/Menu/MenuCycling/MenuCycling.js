@@ -3,10 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import classes from './MenuCycling.module.css'
 
 class MenuCycling extends Component {
-    state = { data: '', location: '', time: '', distanse: '' };
+    state = { data: '', location: '', time: '', distanse: '', avs: '' };
     
    getDate = ({target}) => {
-        console.dir(target);
         this.setState({
             ...this.state, [target.id]: target.value
         });
@@ -44,8 +43,13 @@ class MenuCycling extends Component {
                     id="distanse"
                     onChange={this.getDate}
                 />
-
-
+                <input
+                    type="text"
+                    className="form-control"
+                    placeholder="AVS"
+                    id="avs"
+                    onChange={this.getDate}
+                />
                 <button
                     type="button"
                     className="btn btn-primary"
